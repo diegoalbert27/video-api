@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Video Api</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="player">
+        
+        <video controls>
+            <source src="Cómo quitar la Contraseña de Windows 7 ✔.mp4" type="video/mp4">
+                <p>Fail!</p>
+            <!-- Fallback content here -->
+        </video>
+
+        <div class="controls">
+            
+            <button class="play" data-icon="P" aria-label="play pause toggle">Play</button>
+            <button class="stop" data-icon="S" aria-label="Stop">Stop</button>
+
+            <div class="timer">
+                <div></div>
+                <span aria-label="timer">00:00</span>
+            </div>
+
+            <button class="rwd" data-icon="B" aria-label="rewind">Rewind</button>
+            <button class="fwd" data-icon="F" aria-label="fast forward">Fast</button>
+
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

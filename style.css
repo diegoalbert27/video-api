@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.controls {
+    visibility: hidden;
+    opacity: 0.5;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 3px 3px 5px black;
+    transition: 1s all;
+    display: flex;
+}
+
+.player:hover .controls, .player:focus .controls {
+    opacity: 1;
+}
+
+.timer {
+    line-height: 38px;
+    font-size: 10px;
+    font-family: monospace;
+    text-shadow: 1px 1px 0px black;
+    color: white;
+    flex: 5;
+    position: relative;
+}
+
+.timer div {
+    position: absolute;
+    background-color: red;
+    left: 0;
+    width: 0;
+    top: -8px;
+    height: 38px;
+    z-index: 2;
+}
+
+.timer span {
+    position: absolute;
+    left: 20px;
+    top: -8px;
+    z-index: 3;
+    color: #f1f1f1;
+}
